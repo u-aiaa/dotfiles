@@ -1,16 +1,21 @@
 # vim: set filetype=sh :
 
+# asdf
+ASDF_HOME=/usr/local/Cellar/asdf/0.6.3
+. $ASDF_HOME/asdf.sh
+. $ASDF_HOME/etc/bash_completion.d/asdf.bash
+
 # PATH="$HOME/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/binutils/bin:$PATH"
+#PATH="/usr/local/opt/binutils/bin:$PATH"
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH
 
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-MANPATH="/usr/local/opt/binutils/share/man:$MANPATH"
+#MANPATH="/usr/local/opt/binutils/share/man:$MANPATH"
 MANPATH="/usr/local/opt/findutils/libexec/gnubin:$MANPATH"
 MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 export MANPATH
@@ -37,10 +42,6 @@ fi
 # for secretkey in $secretkeys; do
 #     ssh-add -K "$secretkey" 2> /dev/null
 # done
-
-# asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 
 # shellcheck source=/dev/null
 [[ -f ~/.brew_api_token ]] && . ~/.brew_api_token
