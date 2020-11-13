@@ -2,7 +2,7 @@
 
 ```
 cd ~
-git clone https://github.com/yuji-a/dotfiles.git dotfiles
+git clone git@github.com:u-aiaa/dotfiles.git dotfiles
 cd dotfiles
 ./bootstrap.sh
 ```
