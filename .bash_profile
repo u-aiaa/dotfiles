@@ -1,12 +1,15 @@
 # vim: set filetype=sh :
 
 # asdf
-ASDF_HOME=/usr/local/Cellar/asdf/0.6.3
+#ASDF_HOME=/usr/local/Cellar/asdf/0.7.8
+#ASDF_DIR=$ASDF_HOME
+ASDF_HOME=$HOME/.asdf
 . $ASDF_HOME/asdf.sh
-. $ASDF_HOME/etc/bash_completion.d/asdf.bash
+. $ASDF_HOME/completions/asdf.bash
 
 # PATH="$HOME/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+# PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="$PATH:$HOME/bin:/usr/local/bin:/usr/local/sbin"
 
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 #PATH="/usr/local/opt/binutils/bin:$PATH"
@@ -38,13 +41,18 @@ if [ "$(command -v gcloud)" ]; then
     [[ -f "$gcloudpath/completion.bash.inc" ]] && . "$gcloudpath/completion.bash.inc"
 fi
 
-# secretkeys="$(find ~/.ssh -name id_rsa)"
-# for secretkey in $secretkeys; do
-#     ssh-add -K "$secretkey" 2> /dev/null
-# done
+secretkeys="$(find ~/.ssh -name id_rsa-rtbengine-vm)"
+for secretkey in $secretkeys; do
+    ssh-add -K "$secretkey" 2> /dev/null
+done
 
 # shellcheck source=/dev/null
 [[ -f ~/.brew_api_token ]] && . ~/.brew_api_token
 
 # shellcheck source=/dev/null
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+export GPG_TTY=$(tty)
+export PATH="/usr/local/opt/awscli@1/bin:$PATH"

@@ -24,3 +24,13 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 _asdf "python" "https://github.com/danhper/asdf-python.git" "2.7.10"
 
 _asdf "ruby" "https://github.com/asdf-vm/asdf-ruby.git" "2.3.1"
+
+_asdf "skaffold" "https://github.com/kristoflemmens/asdf-skaffold.git" "0.32.0"
+
+_asdf "golang" "https://github.com/kennyp/asdf-golang.git" "1.11.6"
+
+_asdf "jsonnet" "https://github.com/Banno/asdf-jsonnet.git" "0.13.0"
+
+_asdf "kubesec" "https://github.com/vitalis/asdf-kubesec.git" "0.9.2"
+
+_asdf "kustomize" "https://github.com/virtualstaticvoid/asdf-kustomize.git" "2.0.3"
