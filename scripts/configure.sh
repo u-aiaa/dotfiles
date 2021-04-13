@@ -15,8 +15,8 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>262144</integer></array><key>type</key><string>standard</string></dict></dict>"
 
 # echo "Configuring Keyboard..."
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 echo "Configuring Finder..."
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true

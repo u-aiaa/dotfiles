@@ -49,5 +49,6 @@ cask "firefox"
 cask "google-cloud-sdk"
 cask "java"
 cask "adoptopenjdk8"
+cast "karabiner-elements"
 
 brew "sbt"
