@@ -53,6 +53,13 @@ fi
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+#export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 export GPG_TTY=$(tty)
 export PATH="/usr/local/opt/awscli@1/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
