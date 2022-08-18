@@ -16,3 +16,5 @@ cd dotfiles
   ```
   ld: symbol(s) not found for architecture x86_64
   ```
+* Java Install
+  * https://engineering.mobalab.net/2022/06/06/how-to-install-java-on-macos-in-2022/

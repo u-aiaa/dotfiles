@@ -6,8 +6,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 #ASDF_HOME=/usr/local/Cellar/asdf/0.7.8
 #ASDF_DIR=$ASDF_HOME
 ASDF_HOME=$HOME/.asdf
-. $ASDF_HOME/asdf.sh
-. $ASDF_HOME/completions/asdf.bash
+[[ -f "$ASDF_HOME/asdf.sh" ]] && . $ASDF_HOME/asdf.sh
+[[ -f "$ASDF_HOME/completions/asdf.bash" ]] && . $ASDF_HOME/completions/asdf.bash
 
 # PATH="$HOME/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 # PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
@@ -54,11 +54,12 @@ fi
 # shellcheck source=/dev/null
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 #export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 export GPG_TTY=$(tty)
-export PATH="/usr/local/opt/awscli@1/bin:$PATH"
+# export PATH="/usr/local/opt/awscli@1/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
