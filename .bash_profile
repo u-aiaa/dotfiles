@@ -1,5 +1,7 @@
 # vim: set filetype=sh :
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # asdf
 #ASDF_HOME=/usr/local/Cellar/asdf/0.7.8
 #ASDF_DIR=$ASDF_HOME

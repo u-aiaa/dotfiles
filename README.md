@@ -1,6 +1,9 @@
 # dotfiles
 
 ```
+# bashをdefaultにする場合
+chsh -s /bin/bash
+
 cd ~
 git clone git@github.com:u-aiaa/dotfiles.git dotfiles
 cd dotfiles
