@@ -29,6 +29,7 @@ echo
 if ! command -v brew > /dev/null 2>&1; then
     # Install homebrew: https://brew.sh/
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
     [ $? -ne 0 ] && echo "Failed to install homebew" && exit 1
     echo
 fi

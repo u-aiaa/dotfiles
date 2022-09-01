@@ -44,9 +44,9 @@ cask "visual-studio-code"
 cask "keepassx"
 # cask "google-japanese-ime"
 # cask "google-chrome"
-cast "karabiner-elements"
+cask "karabiner-elements"
 
 cask "fork"
 
 cask "vagrant"
-cask "virtualbox"
+#cask "virtualbox"
