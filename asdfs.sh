@@ -18,14 +18,16 @@ ASDF_HOME=$HOME/.asdf
 . $ASDF_HOME/asdf.sh
 . $ASDF_HOME/completions/asdf.bash
 
-versions=("1.1.7" "1.2.6" "0.13.5")
-install_asdf_plugin "terraform" "https://github.com/Banno/asdf-hashicorp.git" "1.2.6" "${versions[*]}"
+# versions=("1.1.7" "1.2.6" "0.13.5")
+# install_asdf_plugin "terraform" "https://github.com/Banno/asdf-hashicorp.git" "1.2.6" "${versions[*]}"
 
-versions=("16.14.0" "16.5.0")
+# versions=("16.14.0" "16.5.0")
+versions=("16.14.0")
 install_asdf_plugin "nodejs" "https://github.com/asdf-vm/asdf-nodejs.git" "16.14.0" "${versions[*]}"
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
-versions=("1.14.7" "1.15.13" "1.16.12" "1.17.11" "1.18.3")
+# versions=("1.14.7" "1.15.13" "1.16.12" "1.17.11" "1.18.3")
+versions=("1.16.12" "1.17.11" "1.18.3")
 TARGET_GO_VERSION=1.18.3
 install_asdf_plugin "golang" "https://github.com/kennyp/asdf-golang.git" "$TARGET_GO_VERSION" "${versions[*]}"
 

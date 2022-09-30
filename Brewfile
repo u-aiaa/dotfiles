@@ -48,5 +48,5 @@ cask "karabiner-elements"
 
 cask "fork"
 
-cask "vagrant"
+# cask "vagrant"
 #cask "virtualbox"

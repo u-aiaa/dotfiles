@@ -18,6 +18,9 @@ echo "Configuring Keyboard..."
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain KeyRepeat -int 2
 
+echo "Configuring Trackpad..."
+defaults write -g com.apple.trackpad.scaling 5
+
 echo "Mission Control..."
 defaults write com.apple.dock mru-spaces -bool false
 killall Dock
@@ -33,6 +36,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Remove items from the Trash after 30 days
 defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 killall Finder
+
+echo "Configring Directory..."
+mkdir -p ~/Documents/sources
 
 echo ""
 echo "Configuration Complete!"
