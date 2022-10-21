@@ -13,6 +13,6 @@ for file in .??*; do
     [[ "$file" = ".git" ]] && continue
     [[ "$file" = ".DS_Store" ]] && continue
     [[ "$file" = ".travis.yml" ]] && continue
-    cp "$HOME/$file" "$HOME/$file.bk"
+    [ -f "$HOME/$file" ] && cp "$HOME/$file" "$HOME/$file.bk" || echo ""
     ln -fhvs "$DOTPATH/$file" "$HOME/$file"
 done
