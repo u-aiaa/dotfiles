@@ -18,3 +18,11 @@ cd dotfiles
   ```
 * Java Install
   * https://engineering.mobalab.net/2022/06/06/how-to-install-java-on-macos-in-2022/
+
+## item2
+
+GitHub Dark.itermcolors
+https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/GitHub%20Dark.itermcolors
+
+git clone https://github.com/powerline/fonts.git
+./install.sh

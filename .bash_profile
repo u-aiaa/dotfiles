@@ -1,5 +1,7 @@
 # vim: set filetype=sh :
 
+export PS1="\[\e[1;34m\]\w\[\e[m\] \n> "
+
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # asdf
@@ -27,7 +29,7 @@ export LESSCHARSET=utf-8
 export HISTTIMEFORMAT='%y-%m-%d %H:%M:%S '
 export HISTSIZE=5000
 # export XDG_CONFIG_HOME=~/.config
-export PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
+# export PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 export HOMEBREW_INSTALL_CLEANUP=1 # default behaviour from homebrew 2.0.0
 # export QUOTING_STYLE=literal # for GNU ls
 
